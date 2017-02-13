@@ -57,7 +57,7 @@ public interface ListInterface<T> {
 	 * @throw EmptyListException if the list is empty.
 	 * @throw GivenLocationOutOfBoundsException is location is greater than (the size of the list + 1).
 	 */
-	public boolean replace(int location, T newEntry);
+	public boolean replaceByLocation(int location, T newEntry);
 	
 	/**
 	 * replace an entry with the given entry.
@@ -66,7 +66,7 @@ public interface ListInterface<T> {
 	 * @return true if succeeded
 	 * @throw EmptyListException if the list is empty.
 	 */
-	public boolean replace(T oldEntry, T newEntry);
+	public boolean replaceByValue(T oldEntry, T newEntry);
 	
 	
 	/**

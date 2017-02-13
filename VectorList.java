@@ -145,7 +145,7 @@ public class VectorList<T> implements ListInterface<T> {
 	 * @throw EmptyListException if list is empty
 	 * @throw GivenLocationOutOfBoundsException is location is greater than the size of the list
 	 */
-	public boolean replace(int location, T newEntry) {
+	public boolean replaceByLocation(int location, T newEntry) {
 		checkInitialization();
 		if(isEmpty()) {
 			throw new EmptyListException();
@@ -168,7 +168,7 @@ public class VectorList<T> implements ListInterface<T> {
 	 * @return true if succeeded.
 	 * @throw EmptyListException if list is empty.
 	 */
-	public boolean replace(T oldEntry, T newEntry) {
+	public boolean replaceByValue(T oldEntry, T newEntry) {
 		checkInitialization();
 		if(isEmpty()) {
 			throw new EmptyListException();
